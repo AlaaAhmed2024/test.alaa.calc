@@ -1,0 +1,162 @@
+
+
+/* overflow: hidden auto; */
+/* background: rgb(242, 245, 255); */
+
+
+.display-none{
+    display: none;
+}
+.p-red{
+    color: red;
+}
+.back-btn:hover{
+    background-color: #5c00b4;
+    color: #EAEAEA;
+}
+.disabled{
+    background-color: gray !important;
+}
+.icon-password-show{
+
+    color: black;
+    width: 35px;
+    height: 25px;
+    padding: 8px 10px;
+    
+  
+ }
+.icon-password{
+
+   color: black;
+   width: 40px;
+   height: 30px;
+ padding: 10px 10px ;
+   
+ 
+}
+.icon-password svg{
+    width: 22px;
+    height: 22px;
+}
+
+
+.flex-password {
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+
+}
+
+
+.icon-password-show:hover{
+    color: red;
+    cursor: pointer;
+    
+    }
+
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:9px;
+        width: 100%;
+       
+    
+    }
+    .header h3{
+    padding: 0px;
+       
+    }
+    .underline{
+        width: 60px;
+        height: 6px;
+        background-color: blue;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+
+.forgot-password{
+    padding-left: 10px;
+   
+    color: #797979;
+    font-size: 18px;
+}
+
+.forgot-password span{
+
+    color: #8200ff;
+    cursor: pointer;
+}
+
+.submit-container{
+display: flex;
+gap: 20px;
+margin:20px 0px;
+
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    color: #fff;
+    background-color:  #4c00b4;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.gray{
+    background: #EAEAEA;
+    color: #676767;
+}
+
+.gray:hover{
+    background-color: #b97af4;
+    color: #EAEAEA;
+}
+
+/* .w-50{
+    border: 1px solid rgb(79, 77, 77);
+    max-width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: auto;
+background-color: #f2f2f2;
+} */
+    
+    /* label{
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .input-css label{
+    width: 33%;
+    display: inline-block;
+    }
+    
+    
+    input , select{
+        width: 99%;
+        height: 40px;
+        border: none;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top:5px ;
+        margin-left:5px ;
+    } */
+

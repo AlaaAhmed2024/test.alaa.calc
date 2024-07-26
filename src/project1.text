@@ -1,0 +1,267 @@
+import "./Project1.css"
+import Modal from "./Model"
+import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+
+export default function Project1(){
+const [formInputs,setFormInput]=useState({inputName:"",inputPhone:"", inputAge:"",inputSelect:"",inputCheck:false})
+ const[showModdal,setShowModal]=useState(false)
+ const [errorMassge ,setErrorMassge]=useState(null)
+
+ const [password ,setPassword]=useState("")
+ const [showPassword ,setShowPassword]=useState(false)
+
+
+function handelChecked(event){
+     setFormInput({...formInputs,inputCheck:event.target.checked})
+};
+
+function handelCheckDisable(event){
+    event.preventDefault()
+    setErrorMassge(null)
+    const {inputAge , inputPhone} =formInputs
+     if(inputAge < 18 || inputAge> 75){
+          setErrorMassge("خطا لا تنطبق السياسه علي العمر")
+        }else if(inputPhone.length<10){
+            setErrorMassge(" خطأ تاكد من رقم الجوال")
+        }
+      setShowModal(true)
+   
+};
+
+const btnIsDisable = formInputs.inputName==''|| formInputs.inputAge==''||formInputs.inputPhone==""
+
+function handelDivClick(){
+    if(showModdal==true){
+    setShowModal(false)
+    }
+}
+
+
+
+    return(
+        <div className="flex" style={{marginTop:"60px"}} onClick={handelDivClick}>
+            <form className="flex-dir" id="loan-form" onSubmit={(event)=>{event.preventDefault()}}>
+                <h1 style={{textAlign:"center"}}>alaa project add</h1>
+                <hr></hr>
+
+                <label>Name</label>
+                <input value={formInputs.inputName} onChange={(event)=>{setFormInput({...formInputs , inputName:event.target.value})}}/>
+
+              
+                <label>Phone </label>
+                <input value={formInputs.inputPhone} onChange={(event)=>{setFormInput({...formInputs , inputPhone:event.target.value})}}/>
+
+                
+                <label>Age</label>
+                <input value={formInputs.inputAge} onChange={(event)=>{setFormInput({...formInputs , inputAge:event.target.value})}}/>
+                
+                <label style={{marginTop:"30px"}}>Are you an employee</label>
+                <input type="checkbox" checked={formInputs.inputCheck}  onChange={handelChecked}/>
+
+                <label>Salary</label>
+               <select value={formInputs.inputSelect} onChange={(event)=>{setFormInput({...formInputs, inputSelect:event.target.value})}}>
+                 <option>less than 100</option>
+                 <option>between 100 and than 500</option>
+                 <option>above to 500</option>
+               </select>
+
+               <label htmlFor="password">password</label>
+             
+                <div className="flex-password">
+                    <div style={{width:"100%"}}>
+                       <input type= {showPassword? "text" :"password"}  value={password} placeholder="password" id='password' onChange={(e)=>setPassword(e.target.value)} ></input>
+                    </div>
+                    <div className="icon-password" onClick={()=>setShowPassword(!showPassword)}>
+                      {
+                       showPassword? <FontAwesomeIcon icon={faEye} />:<FontAwesomeIcon icon={faEyeSlash} />  
+                      }
+                    </div>
+                </div>
+
+               <button className={btnIsDisable? "disabled" :""} disabled={btnIsDisable} onClick={handelCheckDisable} id="submit-loan-btn">Submit</button>
+                
+
+            </form>
+           
+
+
+            <Modal isVisble={showModdal} errorMassage={errorMassge} />
+        </div>
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import "./Project1.css"
+import Modal from "./Model"
+import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEye, faEyeSlash,faUser,faPhone,faEnvelope,faHashtag,faList, faLock} from '@fortawesome/free-solid-svg-icons'
+
+export default function Project1(){
+const [formInputs,setFormInput]=useState({inputName:"",inputPhone:"", inputAge:"",inputSelect:"",inputCheck:false,email:""})
+ const[showModdal,setShowModal]=useState(false)
+ const [errorMassge ,setErrorMassge]=useState(null)
+
+ const [password ,setPassword]=useState("")
+ const [showPassword ,setShowPassword]=useState(false)
+
+
+function handelChecked(event){
+     setFormInput({...formInputs,inputCheck:event.target.checked})
+};
+
+function handelCheckDisable(event){
+    event.preventDefault()
+    setErrorMassge(null)
+    const {inputAge , inputPhone} =formInputs
+     if(inputAge < 18 || inputAge> 75){
+          setErrorMassge("خطا لا تنطبق السياسه علي العمر")
+        }else if(inputPhone.length<10){
+            setErrorMassge(" خطأ تاكد من رقم الجوال")
+        }
+      setShowModal(true)
+   
+};
+
+const btnIsDisable = formInputs.inputName==''|| formInputs.inputAge==''||formInputs.inputPhone==""
+
+function handelDivClick(){
+    if(showModdal==true){
+    setShowModal(false)
+    }
+}
+
+
+
+    return(
+        <div className="flex" style={{marginTop:"50px"}} onClick={handelDivClick}>
+            <form className="flex-dir" id="loan-form" onSubmit={(event)=>{event.preventDefault()}}>
+            <div className="circle">
+            <FontAwesomeIcon icon={faUser} className="photo-user" />
+            </div>
+                
+                <hr></hr>
+               
+                <label>Name</label>
+                <div className="flex-password">
+
+                <div className="icon-password" >
+                   <FontAwesomeIcon icon={faUser} />
+                   </div>
+
+                  <div style={{width:"100%"}}>
+                     <input value={formInputs.inputName} onChange={(event)=>{setFormInput({...formInputs , inputName:event.target.value})}}/>
+                   </div>
+           
+                 </div>
+                <label>Phone </label>
+                <div className="flex-password">
+                <div className="icon-password" >
+                      <FontAwesomeIcon icon={ faPhone} />
+                    </div>
+                    <div style={{width:"100%"}}>
+                       <input value={formInputs.inputPhone} onChange={(event)=>{setFormInput({...formInputs , inputPhone:event.target.value})}}/>
+                    </div>
+              
+                 </div>
+
+                 <label>email </label>
+                <div className="flex-password">
+                <div className="icon-password" >
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    </div>
+                    <div style={{width:"100%"}}>
+                       <input type="email" value={formInputs.email} onChange={(event)=>{setFormInput({...formInputs , email:event.target.value})}}/>
+                    </div>
+
+                 </div>
+
+              
+
+
+                <label>Age</label>
+            
+                <div className="flex-password">
+                <div className="icon-password" >
+                    <FontAwesomeIcon icon={faHashtag} />
+                    </div>
+                  <div style={{width:"100%"}}>
+                    <input value={formInputs.inputAge} onChange={(event)=>{setFormInput({...formInputs , inputAge:event.target.value})}}/>
+                  </div>
+           
+                 </div>
+
+                
+
+
+{/* 
+                <label style={{marginTop:"30px"}}>Are you an employee</label>
+                <input type="checkbox" checked={formInputs.inputCheck}  onChange={handelChecked}/>
+
+                <label>Salary</label>
+                <div className="flex-password">
+                <div className="icon-password" >
+                    <FontAwesomeIcon icon={faList} />
+                    </div>
+                <div style={{width:"100%"}}>
+               <select value={formInputs.inputSelect} onChange={(event)=>{setFormInput({...formInputs, inputSelect:event.target.value})}}>
+                 <option>less than 100</option>
+                 <option>between 100 and than 500</option>
+                 <option>above to 500</option>
+               </select>
+               </div>
+                
+             </div> */}
+
+              
+
+               <label htmlFor="password">password</label>
+                <div className="flex-password">
+                   <div className="icon-password">
+                     <FontAwesomeIcon icon={faLock} />
+                    </div>
+                     <div style={{width:"100%"}}>
+                        <input type= {showPassword? "text" :"password"}  value={password} placeholder="password" id='password' onChange={(e)=>setPassword(e.target.value)} />
+                     </div>
+
+                     <div className="icon-password-show" onClick={()=>setShowPassword(!showPassword)}>
+                        {
+                         showPassword? <FontAwesomeIcon icon={faEye} />:<FontAwesomeIcon icon={faEyeSlash} />  
+                         }
+                     </div>
+                     </div>
+              
+         <div> 
+               <div style={{display:"inline-block" ,width:"49%"}}>
+               <button className={btnIsDisable? "disabled" :""} disabled={btnIsDisable} onClick={handelCheckDisable} id="submit-loan-btn" style={{width:"80%" , marginRight:"15%"}}>Submit</button>
+               </div> 
+                <div style={{display:"inline-block" ,width:"49%"}}>
+               <button className={btnIsDisable? "disabled" :""} disabled={btnIsDisable} onClick={handelCheckDisable} id="submit-loan-btn" style={{width:"80%" , marginLeft:"15%"}}>Submit</button>
+               </div>    
+          </div>
+            </form>
+           
+
+
+            <Modal isVisble={showModdal} errorMassage={errorMassge} />
+        </div>
+    )
+}

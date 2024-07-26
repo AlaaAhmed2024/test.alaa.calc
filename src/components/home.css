@@ -1,0 +1,244 @@
+.fixed-top{
+    background-color: #fff;
+}
+
+
+
+
+
+.ddd ul{
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+}
+
+
+.display-none{
+    display: none;
+}
+
+
+
+.home-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .ddd ul{
+        display: flex;
+        flex-direction: row;
+        }
+}
+
+
+@media (max-width: 900px) {
+    .ddd ul{
+        display: none;
+        }
+}
+
+@media (max-width: 600px) {
+    .ddd ul{
+        display: none;
+        }
+}
+
+
+
+
+.logo-home{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #f2f2f2;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    -ms-border-radius: 75px;
+    -o-border-radius: 75px;
+}
+
+
+
+
+
+
+
+
+.anm1 {
+    display: block;
+    height: 30px;
+    width: 300px;
+    background: dodgerblue;
+    margin: 0px 20px;
+   
+    transform: skew(-15deg);
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    text-align: center;
+}
+
+@keyframes example {
+    0% {
+        background-color: rgb(8, 177, 2);
+    }
+    50% {
+        background-color: rgb(1, 150, 1);
+    }
+    100% {
+        background-color: rgb(1, 128, 1);
+    }
+}
+
+.anm2 {
+    width: auto;
+    height: auto;
+    margin: 0px 20px;
+    background-color: green;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+} 
+@keyframes example8 {
+    0% {
+        background-color: rgb(43, 43, 120);
+    }
+ 
+    100% {
+        background-color: rgb(3, 3, 81);
+    }
+}
+.po{
+    width: auto;
+    height: 36px;
+    margin: 0px 20px;
+    border-radius:5px ;
+    animation-name: example8;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+
+@keyframes example2 {
+    from {
+        right: 20px;
+        background-color: red;
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+}
+    to {
+        background-color: blue;
+        right: calc(100% - 40px);
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+}
+}
+
+.anm3 {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    position: relative;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.anm3::after{
+    content: "eskan";
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes color-change {
+    from { background-color: rgb(114, 76, 239); }
+    to { background-color: blue; }
+}
+
+@keyframes slide-horizontal {
+    from { left: 0px; }
+    to { left: calc(20px); }
+}
+
+.anm5 {
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    margin: 0px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: red;
+    animation:
+        2s ease-in-out infinite alternate color-change,
+        2s linear infinite alternate slide-horizontal;
+}
+
+
+
+
+
+@keyframes example4 {
+    from {
+        left: 10px;
+        background-color: red;
+        transform: rotateZ(0deg);
+    }
+    to {
+        background-color: blue;
+        left: calc(100% - 800px);
+        transform: rotateZ(360deg);
+    }
+}
+
+.anm4 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    position: relative;
+    border-radius: 10px;
+    background-color: red;
+    animation-name: example4;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+
+
+

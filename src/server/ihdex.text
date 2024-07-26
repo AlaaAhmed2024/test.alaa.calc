@@ -1,0 +1,75 @@
+
+
+const express = require('express')
+const app=express()
+const mysql = require('mysql')
+// const cors=require("cors")
+app.use(express.json())
+// app.use(cors())
+
+const cors = require('cors');
+const corsOptions ={
+    origin:'http://localhost:3003', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
+
+
+
+app.listen(3003,()=>{
+    console.log("alaa server")
+})
+
+
+const dp=mysql.createConnection({
+user:"root",
+host:"localhost",
+password:"",
+database:"users_data"
+
+})
+
+app.post('/register', (req,res)=>{
+const name = req.body.data.name
+const email = req.body.data.email
+const phone = req.body.data.phone
+const password = req.body.data.password
+const confirm_password = req.body.data.confirm_password
+
+const SQL ='INSERT INTO users (name,email,phone,password,confirm_password) VALUES(?,?,?,?,?)'
+const Values =[name,email,phone,password,confirm_password]
+dp.query(SQL,Values ,(err , result)=>{
+    if(err){
+        res.send(err)
+    }else{
+        console.log("User Inserted Successfuly")
+        res.send({message:'User added'})
+    }
+})
+
+})
+
+
+app.post('/login',(req,res)=>{
+const loginname = req.body.data.name
+const loginpassword = req.body.data.password
+
+
+const SQL ='SELECT * FROM users WHERE name = ? && password = ?'
+const Values =[loginname,loginpassword]
+dp.query(SQL,Values ,(err , result)=>{
+    if(err){
+        res.send({errror :err})
+    }
+    if(result.lenght>2){
+        res.send(result)
+
+
+    }else{
+       
+        res.send({message:'sorry user is not found data go to register'})
+    }
+})
+})

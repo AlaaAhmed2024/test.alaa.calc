@@ -1,0 +1,40 @@
+label , input , select{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+ select:focus {
+    background-color: teal
+    ;
+    color: white;
+  }
+
+  input:focus {
+    background-color: teal
+    ;
+    color: white;
+  }
+
+  .net-salary{
+    background: rgb(242, 245, 255);
+    
+  }
+
+  .net-salary label{
+    color: black;
+  }
+.w-38{
+width: 38% !important;
+ }
+
+ .w-60
+ {
+  width: 60% !important;
+   }
+
+   .w-28
+   {
+    width: 27% !important;
+     }
+        
+          

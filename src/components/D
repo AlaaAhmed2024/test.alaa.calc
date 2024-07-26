@@ -1,0 +1,428 @@
+/* 
+import './Login.css'
+import video from '../hvid.f147a847.webm'
+import loginlogo from '../loginLogo.png'
+export default function Login(){
+
+return(
+    <div>
+    <video width="auto" height="auto" className="vedio" autoPlay loop src={video} >Your browser does not support the video tag.</video>
+    <div className="video-overlay"></div>
+     <div className='form-login '>
+        <div className="card css-login">
+            <div className="ineer-container">
+               <div className="form-logo">
+                  <div className="form-logo-ineer ">
+                    <img src={loginlogo} style={{width:"70%"}} alt="logo form"/>
+                  </div>
+
+                 <div className="form-logo">
+                    <div class="text-login">
+                        <label className="css-login-lable ">رجاء تسجيل الدخول</label>
+                        </div>
+                        </div>
+               </div >
+
+               <div className="form-logo">
+               <div class="input-form-login">
+                        <form>
+                            <label className="label-login" style={{ height: "2em" , color: "white"}}>الرقم الوظيفي</label>
+                            <div class="user-name-login-div">
+                                <div class="user-name-login-div2">
+                                    <input aria-invalid="false" name="email" type="text" className="" value="MuiOutlinedInput-root css-1imb3v5" id="mui-1"/>
+                                    <fieldset aria-hidden="true" className="css-igs3ac  ">
+                                        <legend class="css-hdw1oc">
+                                            <span class="notranslate">&ZeroWidthSpace;</span>
+                                            </legend>
+                                            </fieldset>
+                                            </div></div>
+                                            <label class="label-login" style={{ height: "2em" , color: "white"}}>كلمة المرور</label>
+                                            <div class="user-name-login-div">
+                                            <div class="user-name-login-div2">
+                                                    <input aria-invalid="false" name="password" type="password" className="MuiOutlinedInput-root css-1imb3v5" value="" id="mui-2"/>
+                                                    <fieldset aria-hidden="true" className="css-igs3ac  ">
+                                                    <legend class="css-hdw1oc">
+                                                    <span class="notranslate">&ZeroWidthSpace;</span>
+                                                            </legend>
+                                                            </fieldset>
+                                                            </div>
+                                                            </div>
+                                                            <div class="form-login css-19957ek">
+                                                                <div class="form-login css-1pryxxa">
+                                                                    </div>
+                                                                    <a class="" href="/session/forgot-password"  style={{color:" rgb(0, 102, 204)"}}>نسيت كلمة المرور</a>
+                                                                    </div>
+                                                                    <button class="css-1i0mh4a" tabindex="0" type="submit" id="mui-3">تسجيل الدخول<span class=" css-w0pj6f"></span>
+                                                                    </button>
+                                                                    </form>
+                </div>
+              </div>
+
+            </div >
+        </div>
+
+
+    </div>
+
+    </div>
+)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vedio{
+    position: absolute;
+     width: 100%;
+      left: 50%; 
+      top: 50%; 
+      height: 100%; 
+      object-fit: cover;
+     transform: translate(-50%, -50%);
+      z-index: -1;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+.form-login {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100% !important;
+    direction: rtl;
+}
+
+
+
+.form-login .card {
+    max-width: 350px;
+    min-height: 400px;
+    margin: 1rem;
+    display: flex;
+    border-radius: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.075);
+    border: 1px solid rgba(255, 255, 255, 0.224);
+    color: white;
+}
+
+.css-login {
+    background-color: rgb(255, 255, 255);
+    color: rgb(52, 49, 76);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 3px -2px, rgba(0, 0, 0, 0.04) 0px 3px 4px 0px, rgba(0, 0, 0, 0.04) 0px 1px 8px 0px !important;
+}
+
+.ineer-container{
+box-sizing: border-box;
+    display: flex;
+    flex-flow: wrap;
+ width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .form-logo {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .form-logo {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .form-logo {
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+}
+
+.form-logo {
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+.form-logo-ineer {
+padding: 32px;
+height: 100%;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+min-width: 320px;
+}
+
+.text-login{
+display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+}
+
+
+
+
+.css-login-lable {
+    height: 2em;
+    color: white;
+    color: rgba(52, 49, 76, 0.54);
+    font-size: 13px;
+    font-family: Messiri;
+    font-weight: 400;
+    line-height: 1.4375em;
+    padding: 0px; 
+    position: relative;
+    display: block;
+     transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+     max-width: 100%; 
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, max-width 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-form-login{
+    height: 100%;
+    padding: 32px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+
+
+.label-login {
+    color: rgba(52, 49, 76, 0.54);
+    font-size: 13px;
+    font-family: Messiri;
+    font-weight: 400;
+    line-height: 1.4375em;
+    padding: 0px;
+    position: relative;
+    display: block;
+    transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, max-width 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+
+.user-name-login-div{
+display: inline-flex;
+flex-direction: column;
+position: relative;
+min-width: 0px;
+padding: 0px;
+margin: 0px 0px 24px;
+border: 0px;
+vertical-align: top;
+width: 100%;
+max-width: 250px;
+
+}
+
+.user-name-login-div2{
+font-size: 13px;
+font-family: Messiri;
+font-weight: 400;
+line-height: 1.4375em;
+color: rgb(52, 49, 76);
+box-sizing: border-box;
+cursor: text;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+width: 100%;
+position: relative;
+border-radius: 4px;
+}
+
+.user-name-login-div .MuiOutlinedInput-root input {
+    color: white;
+}
+
+.css-1imb3v5:-webkit-autofill {
+    border-radius: inherit;
+}
+
+.css-1imb3v5:-webkit-autofill {
+    animation-duration: 5000s;
+    animation-name: mui-auto-fill;
+}
+
+.css-1imb3v5 {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 8.5px 14px;
+}
+
+.css-hdw1oc {
+    float: unset;
+    overflow: hidden;
+    padding: 0px;
+    line-height: 11px;
+    transition: width 150ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.user-name-login-div .user-name-login-div2 fieldset {
+    border-color: white;
+}
+
+.css-19957ek {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-igs3ac {
+    text-align: left;
+    position: absolute;
+    inset: -5px 0px 0px;
+    margin: 0px;
+    padding: 0px 8px;
+    pointer-events: none;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+.css-1pryxxa {
+    gap: 8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-1i0mh4a {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 16px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Messiri;
+    line-height: 1.75;
+    min-width: 64px;
+    padding: 6px 16px;
+    padding-top: 6px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 102, 204);
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px -3px, rgba(0, 0, 0, 0.043) 0px 8px 10px 1px, rgba(0, 0, 0, 0.035) 0px 3px 14px 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: rgb(52, 49, 76);
+    font-size: 13px;
+    font-family: Messiri;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgb(250, 250, 250);
+} */
