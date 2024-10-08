@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test.alaa.calc/static/css/main.10e6db8a.css",
-    "main.js": "/test.alaa.calc/static/js/main.d30b4a82.js",
+    "main.js": "/test.alaa.calc/static/js/main.d56f6d3c.js",
     "static/js/453.ed3810f9.chunk.js": "/test.alaa.calc/static/js/453.ed3810f9.chunk.js",
     "static/media/hvid.f147a847.webm": "/test.alaa.calc/static/media/hvid.f147a847.f147a84702628cfc064c.webm",
     "static/media/sidebar-bg-dark.jpg": "/test.alaa.calc/static/media/sidebar-bg-dark.9a6772aa3cc21cff5878.jpg",
@@ -9,11 +9,11 @@
     "static/media/alrajhiLogo.svg": "/test.alaa.calc/static/media/alrajhiLogo.3e23469bc9730fb5e0cd48a6c3844e77.svg",
     "index.html": "/test.alaa.calc/index.html",
     "main.10e6db8a.css.map": "/test.alaa.calc/static/css/main.10e6db8a.css.map",
-    "main.d30b4a82.js.map": "/test.alaa.calc/static/js/main.d30b4a82.js.map",
+    "main.d56f6d3c.js.map": "/test.alaa.calc/static/js/main.d56f6d3c.js.map",
     "453.ed3810f9.chunk.js.map": "/test.alaa.calc/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10e6db8a.css",
-    "static/js/main.d30b4a82.js"
+    "static/js/main.d56f6d3c.js"
   ]
 }
