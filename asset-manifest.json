@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test.alaa.calc/static/css/main.16afd469.css",
-    "main.js": "/test.alaa.calc/static/js/main.249b2d95.js",
+    "main.js": "/test.alaa.calc/static/js/main.a35fc27d.js",
     "static/js/453.ed3810f9.chunk.js": "/test.alaa.calc/static/js/453.ed3810f9.chunk.js",
     "static/media/hvid.f147a847.webm": "/test.alaa.calc/static/media/hvid.f147a847.f147a84702628cfc064c.webm",
     "static/media/sidebar-bg-dark.jpg": "/test.alaa.calc/static/media/sidebar-bg-dark.9a6772aa3cc21cff5878.jpg",
@@ -10,11 +10,11 @@
     "static/media/albiladLogo.svg": "/test.alaa.calc/static/media/albiladLogo.de725d84ef911d53602c5b8fcf8ecca2.svg",
     "index.html": "/test.alaa.calc/index.html",
     "main.16afd469.css.map": "/test.alaa.calc/static/css/main.16afd469.css.map",
-    "main.249b2d95.js.map": "/test.alaa.calc/static/js/main.249b2d95.js.map",
+    "main.a35fc27d.js.map": "/test.alaa.calc/static/js/main.a35fc27d.js.map",
     "453.ed3810f9.chunk.js.map": "/test.alaa.calc/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16afd469.css",
-    "static/js/main.249b2d95.js"
+    "static/js/main.a35fc27d.js"
   ]
 }
